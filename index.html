@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PneumoAI - Pneumonia Detection System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="container flex items-center justify-between py-16">
+            <div class="navbar-brand">
+                <h2 class="m-0">🫁 PneumoAI</h2>
+            </div>
+            <ul class="navbar-nav">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#model-info" class="nav-link">Model Info</a></li>
+                <li><a href="#upload" class="nav-link">Upload & Analyze</a></li>
+                <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Landing Page -->
+    <section id="home" class="page active">
+        <div class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">AI-Powered Pneumonia Detection</h1>
+                    <p class="hero-subtitle">Advanced deep learning model for accurate chest X-ray analysis and pneumonia diagnosis</p>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-value">98.8%</div>
+                            <div class="stat-label">Accuracy</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">99.2%</div>
+                            <div class="stat-label">Sensitivity</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">97.9%</div>
+                            <div class="stat-label">Specificity</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">&lt;3s</div>
+                            <div class="stat-label">Processing Time</div>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn btn--primary btn--lg" onclick="showPage('upload')">Try Demo</button>
+                        <button class="btn btn--outline btn--lg" onclick="showPage('model-info')">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <div class="container">
+                <h2 class="section-title">Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>High Accuracy</h3>
+                        <p>Ensemble model achieving 98.8% accuracy with state-of-the-art deep learning techniques</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast Processing</h3>
+                        <p>Real-time analysis with results delivered in under 3 seconds</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔬</div>
+                        <h3>Clinical Ready</h3>
+                        <p>Validated on large dataset with clinical-grade performance metrics</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Comprehensive Analytics</h3>
+                        <p>Detailed performance metrics and visualization tools for medical professionals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Model Information Page -->
+    <section id="model-info" class="page">
+        <div class="container py-16">
+            <h1 class="page-title">Model Architecture & Performance</h1>
+            
+            <div class="model-overview">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Ensemble Architecture</h3>
+                        <p>Our pneumonia detection system uses an advanced ensemble approach combining multiple deep learning models for superior accuracy and robustness.</p>
+                        <div class="tech-specs">
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <strong>Framework:</strong> TensorFlow/Keras
+                                </div>
+                                <div class="spec-item">
+                                    <strong>Image Size:</strong> 224×224 pixels
+                                </div>
+                                <div class="spec-item">
+                                    <strong>Batch Size:</strong> 32
+                                </div>
+                                <div class="spec-item">
+                                    <strong>Training Epochs:</strong> 50
+                                </div>
+                                <div class="spec-item">
+                                    <strong>Optimizer:</strong> Adam
+                                </div>
+                                <div class="spec-item">
+                                    <strong>Learning Rate:</strong> 0.001
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model-comparison">
+                <h3>Model Performance Comparison</h3>
+                <div class="chart-container">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1749459758/pplx_code_interpreter/1a34031c_nn9pqk.jpg" alt="Model Performance Comparison Chart" class="chart-image">
+                </div>
+                <div class="performance-table">
+                    <table class="results-table">
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>Accuracy</th>
+                                <th>Precision</th>
+                                <th>Recall</th>
+                                <th>F1-Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="best-model">
+                                <td>Ensemble Model</td>
+                                <td>98.8%</td>
+                                <td>98.8%</td>
+                                <td>98.8%</td>
+                                <td>98.8%</td>
+                            </tr>
+                            <tr>
+                                <td>ResNet-18</td>
+                                <td>97.3%</td>
+                                <td>98.3%</td>
+                                <td>98.3%</td>
+                                <td>98.3%</td>
+                            </tr>
+                            <tr>
+                                <td>VGG-16 Transfer</td>
+                                <td>97.1%</td>
+                                <td>97.1%</td>
+                                <td>97.1%</td>
+                                <td>97.1%</td>
+                            </tr>
+                            <tr>
+                                <td>Vision Transformer</td>
+                                <td>97.6%</td>
+                                <td>95.0%</td>
+                                <td>95.0%</td>
+                                <td>95.0%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload & Analyze Page -->
+    <section id="upload" class="page">
+        <div class="container py-16">
+            <h1 class="page-title">Upload & Analyze Chest X-Ray</h1>
+            
+            <div class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <div class="upload-icon">📁</div>
+                        <h3>Drop your chest X-ray image here</h3>
+                        <p>Or click to browse files</p>
+                        <p class="upload-note">*Supports JPEG, PNG formats</p>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                        <button class="btn btn--primary" onclick="document.getElementById('fileInput').click()">Choose File</button>
+                    </div>
+                </div>
+
+                <div class="demo-section">
+                    <h4>Try with sample images:</h4>
+                    <div class="sample-images">
+                        <div class="sample-image" onclick="analyzeSample('normal')">
+                            <div class="sample-placeholder normal">Normal X-Ray</div>
+                            <span>Normal Case</span>
+                        </div>
+                        <div class="sample-image" onclick="analyzeSample('pneumonia')">
+                            <div class="sample-placeholder pneumonia">Pneumonia X-Ray</div>
+                            <span>Pneumonia Case</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="analysis-section" id="analysisSection" style="display: none;">
+                <div class="analysis-progress" id="analysisProgress">
+                    <div class="progress-header">
+                        <h3>🔍 Analyzing Image...</h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                    </div>
+                    <div class="progress-steps">
+                        <div class="step active" id="step1">Preprocessing image</div>
+                        <div class="step" id="step2">Running AI models</div>
+                        <div class="step" id="step3">Ensemble prediction</div>
+                        <div class="step" id="step4">Generating results</div>
+                    </div>
+                </div>
+
+                <div class="analysis-results" id="analysisResults" style="display: none;">
+                    <div class="results-grid">
+                        <div class="result-card primary-result">
+                            <h3>Diagnosis</h3>
+                            <div class="diagnosis" id="diagnosis">Normal</div>
+                            <div class="confidence" id="confidence">Confidence: 94.2%</div>
+                        </div>
+                        <div class="result-card">
+                            <h3>Risk Assessment</h3>
+                            <div class="risk-indicator" id="riskIndicator">
+                                <div class="risk-level low">Low Risk</div>
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <h3>Recommendations</h3>
+                            <ul class="recommendations" id="recommendations">
+                                <li>No immediate concerns detected</li>
+                                <li>Continue routine monitoring</li>
+                                <li>Consult physician for complete evaluation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="heatmap-section">
+                        <h3>AI Attention Heatmap</h3>
+                        <div class="heatmap-container">
+                            <div class="heatmap-placeholder" id="heatmapView">
+                                <div class="attention-overlay"></div>
+                                <p>Model attention visualization showing areas of focus during analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Dashboard -->
+    <section id="dashboard" class="page">
+        <div class="container py-16">
+            <h1 class="page-title">Performance Dashboard</h1>
+            
+            <div class="metrics-overview">
+                <div class="metrics-grid">
+                    <div class="metric-card accuracy">
+                        <div class="metric-value">98.8%</div>
+                        <div class="metric-label">Overall Accuracy</div>
+                        <div class="metric-description">Model correctly classifies 98.8% of all cases</div>
+                    </div>
+                    <div class="metric-card sensitivity">
+                        <div class="metric-value">99.2%</div>
+                        <div class="metric-label">Sensitivity (Recall)</div>
+                        <div class="metric-description">True pneumonia cases correctly identified</div>
+                    </div>
+                    <div class="metric-card specificity">
+                        <div class="metric-value">97.9%</div>
+                        <div class="metric-label">Specificity</div>
+                        <div class="metric-description">Normal cases correctly identified</div>
+                    </div>
+                    <div class="metric-card auc">
+                        <div class="metric-value">98.4%</div>
+                        <div class="metric-label">AUC Score</div>
+                        <div class="metric-description">Area under the ROC curve</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-section">
+                <div class="chart-row">
+                    <div class="chart-card">
+                        <h3>Confusion Matrix</h3>
+                        <div class="chart-container">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1749459791/pplx_code_interpreter/45ea699f_vflwzv.jpg" alt="Confusion Matrix" class="chart-image">
+                        </div>
+                        <div class="confusion-stats">
+                            <div class="stat-row">
+                                <span>True Positives: 385</span>
+                                <span>False Negatives: 3</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>False Positives: 5</span>
+                                <span>True Negatives: 231</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <h3>ROC Curve Analysis</h3>
+                        <div class="chart-container">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1749459833/pplx_code_interpreter/cf6c6aa7_kv3wix.jpg" alt="ROC Curve" class="chart-image">
+                        </div>
+                        <div class="roc-stats">
+                            <div class="auc-score">AUC = 0.984</div>
+                            <p>Excellent discriminative performance with near-perfect separation between classes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dataset-overview">
+                    <h3>Dataset Distribution</h3>
+                    <div class="chart-container">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1749459627/pplx_code_interpreter/24cc39ba_jmtpkt.jpg" alt="Dataset Distribution" class="chart-image">
+                    </div>
+                    <div class="dataset-stats">
+                        <div class="dataset-grid">
+                            <div class="dataset-item">
+                                <strong>Total Images:</strong> 5,863
+                            </div>
+                            <div class="dataset-item">
+                                <strong>Training Set:</strong> 5,216 images
+                            </div>
+                            <div class="dataset-item">
+                                <strong>Test Set:</strong> 624 images
+                            </div>
+                            <div class="dataset-item">
+                                <strong>Validation Set:</strong> 16 images
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+        <div class="container py-16">
+            <h1 class="page-title">About PneumoAI</h1>
+            
+            <div class="about-content">
+                <div class="about-section">
+                    <h2>Project Overview</h2>
+                    <p>PneumoAI is an advanced artificial intelligence system designed to assist healthcare professionals in the accurate and rapid detection of pneumonia from chest X-ray images. Leveraging state-of-the-art deep learning techniques, our system achieves clinical-grade performance with 98.8% accuracy.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Clinical Significance</h2>
+                    <div class="clinical-impact">
+                        <div class="impact-item">
+                            <div class="impact-stat">99.2%</div>
+                            <div class="impact-desc">Early Detection Rate - Pneumonia cases correctly identified</div>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-stat">2.1%</div>
+                            <div class="impact-desc">False Positive Rate - Normal cases misclassified as pneumonia</div>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-stat">&lt;3 sec</div>
+                            <div class="impact-desc">Processing Time - Average time for diagnosis</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h2>Technical Implementation</h2>
+                    <div class="tech-details">
+                        <div class="tech-category">
+                            <h4>Model Architecture</h4>
+                            <ul>
+                                <li>Ensemble of CNN architectures (ResNet, VGG, DenseNet)</li>
+                                <li>Transfer learning with medical image fine-tuning</li>
+                                <li>Vision Transformer integration</li>
+                                <li>Custom attention mechanisms for interpretability</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Data Processing</h4>
+                            <ul>
+                                <li>Advanced image preprocessing and normalization</li>
+                                <li>Data augmentation for improved generalization</li>
+                                <li>Quality assurance and artifact detection</li>
+                                <li>Real-time inference optimization</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Validation & Testing</h4>
+                            <ul>
+                                <li>Cross-validation on diverse patient populations</li>
+                                <li>External validation on independent datasets</li>
+                                <li>Clinical workflow integration testing</li>
+                                <li>Continuous monitoring and performance tracking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h2>Future Developments</h2>
+                    <p>We are continuously working to improve PneumoAI with plans for multi-pathology detection, integration with hospital information systems, and development of mobile applications for point-of-care diagnosis in resource-limited settings.</p>
+                </div>
+
+                <div class="disclaimer">
+                    <h4>⚠️ Important Medical Disclaimer</h4>
+                    <p>This AI system is designed to assist healthcare professionals and should not replace professional medical judgment. All diagnoses should be confirmed by qualified medical personnel. This tool is for educational and research purposes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

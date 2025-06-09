@@ -1,0 +1,8 @@
+Model,Accuracy (%),Precision (%),Recall/Sensitivity (%),Specificity (%),F1-Score (%),AUC (%),Training Time (hours),Parameters (M)
+Custom CNN,93.5,92.8,94.2,92.8,93.5,94.2,2.5,15.2
+VGG-16 Transfer Learning,97.1,97.1,97.1,97.1,97.1,97.1,1.5,138.4
+DenseNet-121 Transfer Learning,96.2,96.6,96.2,96.2,96.4,96.2,1.8,7.0
+ResNet-18 Transfer Learning,97.3,98.3,98.3,97.3,98.3,97.3,1.6,11.2
+Ensemble Model (3 CNNs),98.8,98.8,98.8,98.0,98.8,98.4,4.5,156.6
+Vision Transformer (ViT),97.6,95.0,95.0,98.0,95.0,97.6,3.2,86.6
+Proposed Weighted Ensemble,98.8,98.8,98.8,98.0,98.8,98.4,4.8,156.6

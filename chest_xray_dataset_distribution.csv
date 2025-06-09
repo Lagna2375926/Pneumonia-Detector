@@ -1,0 +1,4 @@
+Set,Normal Images,Pneumonia Images,Total Images,Normal %,Pneumonia %
+Training,1341,3875,5216,25.7,74.3
+Validation,8,8,16,50.0,50.0
+Testing,234,390,624,37.5,62.5

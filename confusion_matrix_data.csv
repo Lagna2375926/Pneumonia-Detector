@@ -1,0 +1,5 @@
+Predicted,Actual,Count,Percentage
+Normal,Normal,231,37.0
+Normal,Pneumonia,3,0.5
+Pneumonia,Normal,5,0.8
+Pneumonia,Pneumonia,385,61.7

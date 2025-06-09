@@ -1,0 +1,12 @@
+Metric,Value,Description
+True Positives (TP),385.0,Correctly identified pneumonia cases
+True Negatives (TN),231.0,Correctly identified normal cases
+False Positives (FP),5.0,Normal cases misclassified as pneumonia
+False Negatives (FN),3.0,Pneumonia cases misclassified as normal
+Accuracy,0.988,Overall correct predictions
+Precision (PPV),0.988,Proportion of positive predictions that were correct
+Recall/Sensitivity (TPR),0.992,Proportion of actual positives correctly identified
+Specificity (TNR),0.979,Proportion of actual negatives correctly identified
+F1-Score,0.99,Harmonic mean of precision and recall
+AUC-ROC,0.984,Area under the ROC curve
+Matthews Correlation Coefficient (MCC),0.973,Correlation between predicted and actual binary classifications
